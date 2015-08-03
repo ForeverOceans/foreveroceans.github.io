@@ -1,5 +1,5 @@
-body { 
-  padding-top: 50px; 
+body {
+  padding-top: 50px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -22,21 +22,16 @@ hr.accent {
   border-color: #1142aa;
 }
 
-.carousel-inner > .item > a > img, 
+.carousel-inner > .item > a > img,
 .carousel-inner > .item > img {
   margin: 0 auto;
-}
-
-/* Temp */
-img.bottom-round {
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .carousel-caption {
     font-size: 45px;
-  }  
+  }
 }
 
 .navbar-brand > img {
@@ -49,7 +44,7 @@ img.bottom-round {
 }
 
 section {
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 section .section-header {
@@ -57,6 +52,46 @@ section .section-header {
   font-size: 40px;
   text-align: center;
   text-transform: uppercase;
+}
+
+section#partners {
+  padding: 10px 0;
+}
+
+section#partners .frame {
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* < small viewports */
+@media (max-width: 991px) {
+  section#partners .frame > img {
+    max-width: 400px;
+    margin-bottom: 15px;
+  }
+}
+
+/* > med viewports */
+@media (min-width: 991px) {
+  section#partners .frame {
+    height: 80px;
+  }
+}
+
+section#partners .frame > .helper {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+section#partners .frame > img {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+section.bg-dark-gray {
+  background-color: #0C0C0C;
 }
 
 section.bg-light-gray {
@@ -83,7 +118,7 @@ section .section-image {
 }
 
 #callout {
-  background: rgb(47, 47, 47);
+  background: #2F2F2F;
   color: #FFF;
   padding: 50px 0;
 }
